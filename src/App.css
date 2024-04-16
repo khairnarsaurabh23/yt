@@ -99,10 +99,16 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 48px;
   padding: 24px;
+  margin-top: 130%;
 }
 
 .video-card {
   cursor: pointer;
+}
+
+.video-card:hover{
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out;
 }
 
 .video-thumbnail {
