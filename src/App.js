@@ -12,7 +12,7 @@ const App = () => {
 
     try {
       const response = await fetch(
-        `https://www.googleapis.com/youtube/v3/search?q=${searchTerm}&key=AIzaSyCUeiuJePOVU4Rb5EugS7267eUk7H8BrbY&part=snippet&type=video&maxResults=5`
+        `https://www.googleapis.com/youtube/v3/search?q=${searchTerm}&key=AIzaSyCUeiuJePOVU4Rb5EugS7267eUk7H8BrbY&part=snippet&type=video&maxResults=21`
       );
       const data = await response.json();
       setVideos(data.items);
